@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Element selector */
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #f9f9fc; /* HEX */
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Gradient banner */
+    header {
+      background: linear-gradient(135deg, rgb(34, 150, 243), hsl(280, 70%, 50%));
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* ID selector */
+    #main-title {
+      font-size: 2.5rem;
+    }
+
+    /* Class selector */
+    .highlight {
+      background-color: rgba(255, 215, 0, 0.4); /* RGBA */
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* Attribute selector */
+    a[target="_blank"] {
+      color: hsl(340, 80%, 50%);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    /* Pseudo-class */
+    a:hover {
+      color: #ff6600;
+    }
+
+    /* Pseudo-element */
+    p::first-line {
+      font-weight: bold;
+      color: darkblue;
+    }
+
+    /* Movies List */
+    ul {
+      list-style-type: square;
+      padding-left: 25px;
+      margin: 15px 0;
+    }
+
+    li {
+      margin: 6px 0;
+      font-size: 1rem;
+    }
+
+    .favorite {
+      background: teal;
+      color: white;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    /* Team Section */
+    .team-section {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .team-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid rgb(34, 150, 243);
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      color: #222;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 50px;
+      background: #222;
+      color: #ddd;
+      text-align: center;
+      padding: 15px;
+    }
+
+    footer a {
+      color: #ff6600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Banner -->
+  <header>
+    <h1 id="main-title">About Us</h1>
+    <p>Innovating with <span class="highlight">creativity</span> and <span class="highlight">excellence</span></p>
+  </header>
+
+  <main>
+    <section>
+      <p>
+        Welcome to <span class="highlight">TechVision</span>, a company dedicated to delivering cutting-edge digital solutions. 
+        We focus on innovation, teamwork, and building user-first experiences that make a difference.
+      </p>
+      <p>
+        Learn more about us on our 
+        <a href="https://example.com" target="_blank">official website</a>.
+      </p>
+    </section>
+
+    <!-- Favorite Movies -->
+    <section>
+      <h2>Our Favorite Movies</h2>
+      <ul>
+        <li>Inception</li>
+        <li class="favorite">Interstellar ⭐</li>
+        <li>The Dark Knight</li>
+        <li>Avengers: Endgame</li>
+      </ul>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+      <h2>Meet Our Team</h2>
+      <div class="team-container">
+        <div class="card">
+          <img src="https://via.placeholder.com/90" alt="Team Member">
+          <h3>Alice Johnson</h3>
+          <p>CEO & Founder</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/90" alt="Team Member">
+          <h3>Michael Smith</h3>
+          <p>Lead Developer</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/90" alt="Team Member">
+          <h3>Sophia Lee</h3>
+          <p>UI/UX Designer</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/90" alt="Team Member">
+          <h3>David Kim</h3>
+          <p>Project Manager</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 TechVision | Designed with ❤️ by our team | <a href="#">Contact Us</a></p>
+  </footer>
+
+</body>
+</html>
